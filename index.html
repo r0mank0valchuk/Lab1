@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/6602449.jpg" alt="Лого">
+            <div class="logo-hover">
+                <img src="images\images.jpg" alt="Додаткове фото">
+                <p>Зроблено Ковальчуком Романом</p>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#numbers">Числа</a>
+            <a href="#triangle">Трикутник</a>
+            <a href="#vowels">Голосні</a>
+            <a href="#sum-product">Сума і добуток</a>
+        </div>
+    </div>
+    
+
+
+    <div class="content">
+        <div id="numbers" class="task">
+            <div class="text">
+                <p>введіть число, і ми виведемо його прописом:</p>
+                <input type="number" id="numberInput">
+                <button onclick="convertNumberToWords()">перетворити число в текст</button>
+                <div class="result" id="numberOutput"></div>
+            </div>
+            <img src="images\hand-drawn-math-symbols-icon-in-flat-style-mathematics-formula-illustration-on-isolated-background-school-education-sign-business-concept-vector.jpg" alt="Числа">
+        </div>
+    
+        <div id="triangle" class="task">
+            <div class="text">
+                <p>Введіть катети прямокутного трикутника:</p>
+                <input type="number" id="triangleA" placeholder="Катет A">
+                <input type="number" id="triangleB" placeholder="Катет B">
+                <button onclick="calculateTriangle()">обчислити</button>
+                <div class="result" id="triangleOutput"></div>
+            </div>
+            <img src="triangle_image.jpg" alt="фото2">
+        </div>
+    
+        <div id="vowels" class="task">
+            <div class="text">
+                <p>введіть текст, і ми підрахуємо кількість голосних:</p>
+                <input type="text" id="inputText">
+                <button onclick="countVowelsDisplay()">Підрахувати</button>
+                <div class="result" id="vowelOutput"></div>
+            </div>
+            <img src="vowels_image.jpg" alt="фото3">
+        </div>
+    
+        <div id="sum-product" class="task">
+            <div class="text">
+                <p>введіть число, і ми знайдемо суму та добуток його цифр:</p>
+                <input type="number" id="sumProductInput">
+                <button onclick="calculateSumAndProduct()">обчислити</button>
+                <div class="result" id="sumProductOutput"></div>
+            </div>
+            <img src="math_image.jpg" alt="фото4">
+        </div>
+    </div>
+
+    <div class="footer">
+        Виконано Ковальчуком Романом
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
